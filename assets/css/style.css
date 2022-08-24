@@ -7,6 +7,7 @@
 
 body {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 /* Banner */
@@ -72,6 +73,12 @@ body {
     text-decoration: none;
     padding: .25rem 0;
     display: block;
+    transition: .5s;
+}
+
+.text-banner > ul > li > a:hover {
+    transform: translateX(1rem);
+    font-weight: bold;
 }
 
 .link-banner ul {
@@ -93,6 +100,11 @@ body {
     justify-content: center;
     align-items: center;
     text-decoration: none;
+    transition: .5s;
+}
+
+.link-banner ul li a:hover {
+    color: #53623a;
 }
 
 .mobile-img {
@@ -122,7 +134,6 @@ body {
     width: 200px;
     border: 5px solid #53623a;
     border-radius: 100%;
-    /* transform: rotate(15deg); */
 }
 
 /* Header */
@@ -152,6 +163,12 @@ nav ul li a {
     font-size: 1.5em;
     padding: .5rem 0;
     display: block;
+    transition: .5s;
+}
+
+nav ul li a:hover {
+    transform: scale(1.1);
+    color: #53623a;
 }
 
 .nav-btn button {
@@ -190,10 +207,17 @@ nav ul li a {
     color: #53623a;
     text-decoration: none;
     font-weight: 600;
+    transition: .5s;
+}
+
+.nav-menu ul li a:hover {
+    background-color: #53623a;
+    color: #b7c69d;
 }
 
 /* Intro */
 .bg-intro {
+    overflow-x: hidden;
     padding: 3rem 0;
 }
 
@@ -236,6 +260,11 @@ nav ul li a {
     text-align: center;
     display: block;
     font-size: 1.25em;
+    transition: .5s;
+}
+
+.intro-img-text a:hover {
+    color: #b7c69d;
 }
 
 /* About */
@@ -281,7 +310,6 @@ nav ul li a {
     padding: 3rem 0;
     background: url(../images/background.jpeg);
     background-repeat: no-repeat;
-    /* background-position: 0 -200px; */
     background-size: cover;
     height: 600px;
     position: relative;
@@ -366,7 +394,6 @@ nav ul li a {
     font-weight: 300;
     margin: 2rem auto 1rem;
     text-align: center;
-    /* width: 80%; */
 }
 
 .carousel-cell a {
@@ -374,6 +401,13 @@ nav ul li a {
     text-align: center;
     color: #53623a;
     font-size: 1.25em;
+    transition: .5s;
+}
+
+.carousel-cell a:hover {
+    font-weight: bold;
+    text-decoration: none;
+    transform: scale(1.1);
 }
 
 /* Gallery */
@@ -424,6 +458,7 @@ nav ul li a {
 
 /* Achievement */
 .bg-achievement {
+    overflow-x: hidden;
     padding: 5rem 0;
     background-color: #f6f2e7;
 }
@@ -501,7 +536,7 @@ nav ul li a {
     }
 
     .about-text p {
-        font-size: .75em;
+        font-size: 1em;
     }
 
     .bg-quote {
